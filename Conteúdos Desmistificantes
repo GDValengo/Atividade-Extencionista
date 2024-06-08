@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Adição do Bootstrap e do CSS-->
+        <meta charset="utf-8">
+        <title>Gabriel Valengo</title>
+        <link href="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbflcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: lightgray;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .branco{
+                color: white;
+            }
+            .header {
+                background-color: black;
+                padding: 15px;
+                text-align: center;
+                color:red;
+            }
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: yellow;
+            }
+            .post p{
+                margin: 10px 0;
+            }
+            .menu,
+            .logo {
+                padding: 10px;
+            }
+            .menu a, 
+            .menu a:visited{
+                color:yellow;
+                text-decoration: none;
+                padding: 8px 12px;
+            }
+            .menu a:hover {
+                background-color:white;
+                color:black;
+            }
+            .container{
+                width: 920 px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .posts{
+                width: 900px;
+                float: left;
+            }
+            .post{
+                background-color: white;
+                padding: 50px;
+                margin-bottom: 20px;
+            }
+            h2{
+                color:red;
+            }
+            .autor{
+                font-size: 0.8em;
+                margin-bottom: 15px;
+                display: block;
+            }
+            .barra-lateral{
+                width: 360px;
+                float: right;
+            }
+            .conteudo-lateral{
+                background-color: black;
+                color: white;
+            }
+            .conteudo-lateral h3 {
+                background-color: yellow;
+                color: red;
+                padding: 5px;
+                font-size: 2,25em;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .post-games h4 {
+                background-color: black;
+                color: white;
+                font-size: 2 em;
+                padding: 5px;
+                text-align: center;
+                margin-bottom: 5px;
+                border-bottom: 2px solid white;
+            }
+            .post-games{
+                background-color: black;
+                color: white;
+                font-size:1,9em;
+                padding: 5px;
+                border-bottom: 2px solid white;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .post-games-indicações{
+                background-color: black;
+                color: white;
+                font-size:1,9em;
+                padding: 5px;
+                border-bottom: 2px solid white;
+                text-align: center;
+            }
+            .post-recomendações{
+                background-color: black;
+                color: white;
+                font-size:1,9em;
+                padding: 5px;
+                border-bottom: 2px solid white;
+                text-align: center;
+            }
+            .post-assistir h4{
+                background-color: black;
+                color: white;
+                font-size:1,9em;
+                padding: 5px;
+                border-bottom: 2px solid white;
+                text-align: center;
+            }
+            .post-assistir{
+                background-color: black;
+                color: white;
+                font-size:1,9em;
+                padding: 5px;
+                border-bottom: 2px solid white;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .post-assistir-indicações{
+                background-color: black;
+                color: white;
+                font-size:1,9em;
+                padding: 5px;
+                border-bottom: 2px solid white;
+                text-align: center;
+            }
+            .post-esportes h4{
+                background-color: black;
+                color: white;
+                font-size:1,9em;
+                padding: 5px;
+                border-bottom: 2px solid white;
+                text-align: center;
+            }
+            .post-esportes-indicações{
+                background-color: black;
+                color: white;
+                font-size:1,9em;
+                padding: 5px;
+                border-bottom: 2px solid white;
+                text-align: center;
+            }
+            .post-recomendações:last-child {
+                border: none;
+            }
+            .post-games-indicações:last-child{
+                border: none;
+            }
+            .post-assistir :last-child{
+                border: none;
+            }
+            .post-esportes-indicações:last-child{
+                border: none;
+            }
+            .footer {
+                clear: both;
+                background-color: black;
+                padding: 15px;
+            }
+            .footer p{
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <h1> <span class="branco"> Conteúdos</span> Desmistificantes</h1>
+            </div>
+            <div class="menu">
+                <a href="#">Página Inicial</a>
+                <a href="https://gdvalengo.github.io/Atividade-Extencionista/formul%C3%A1rio.html">Formulário</a>
+                <a href="#">Playlist das Boas</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="posts">
+                <div class="post">
+                    <h2>A Melhor Solução no Mercado</h2>
+                    <span class="autor">Gabriel D. Valengo</span>
+                    <img src="./Imagens/assistencia-tecnica-informatica-goiania-300x300.png" width="800px">
+                    <p> A Resposta para todos os Problemas que Sempre Resolve Tudo.</p>
+                    <a href="https://drive.google.com/file/d/1iZwgPQRnV9J8kB2hgB-LTKMuMnggd2Rh/view?usp=drive_link"> Ver Contéudo? </a>
+                </div>
+                <div class="post">
+                    <h2>O Segredo para Problemas Ocasionais e Cotidianos</h2>
+                    <span class="autor">Gabriel D. Valengo</span>
+                    <img src="./Imagens/depositphotos_20111571-stock-photo-businessman-sleeping.jpg" width="800px">
+                    <p> Você já Passou por Isso em Algum Momento. </p>
+                    <a href="https://drive.google.com/file/d/1YnE5nL0JOXB5igKqT-PGsfMjnJA47_ja/view?usp=drive_link"> Ver Contéudo? </a>
+                </div>
+                <div class="post">
+                    <h2>Problemas que Nós Mesmos Aceitamos e Concordamos</h2>
+                    <span class="autor">Gabriel D. Valengo</span>
+                    <img src="./Imagens/baidu-seguranca-computador-software.png" width="800px">
+                    <p> Prblemas que Você Concordou em Adquirir e Você Sabe. </p>
+                    <a href="https://drive.google.com/file/d/1eSnWo0P5AEazbG6sUDylWfxzoCQ7YxAL/view?usp=drive_link"> Ver Contéudo? </a>
+                </div>
+                <div class="post">
+                    <h2>Como Escolher o seu Computador Parte 1</h2>
+                    <span class="autor">Gabriel D. Valengo</span>
+                    <img src="./Imagens/Thumb_potateis_compra_2020.jpg" width="800px">
+                    <p> Dicas Para Quando Comprar um PC. </p>
+                    <a href="https://drive.google.com/file/d/1oVwBAYFF_-i4i5ZQmxRC4_100vWessdb/view?usp=drive_link"> Ver Contéudo? </a>
+                </div>
+                <div class="post">
+                    <h2>Como Escolher o seu computador Parte 2</h2>
+                    <span class="autor">Gabriel D. Valengo</span>
+                    <img src="./Imagens/computadores-notebooks-demanda-2020-gartner-idc-pandemia.jpg" width="800px">
+                    <p> Dicas Para Quando Comprar um PC. </p>
+                    <a href="https://drive.google.com/file/d/19dQCurRYeb0CoE2zJYN05F7Rpyv9kXG4/view?usp=drive_link"> Ver Contéudo? </a>
+                </div>
+                <div class="post">
+                    <h2>KB, MB, GB</h2>
+                    <span class="autor">Gabriel D. Valengo</span>
+                    <img src="./Imagens/Flash_memory_cards_size.jpg" width="800px">
+                    <p> As Mediads das Memórias. </p>
+                    <a href="https://drive.google.com/file/d/1a6SWcZezYt6hfGMOZxbbY1HHeEqwoNC1/view?usp=drive_link"> Ver Contéudo? </a>
+                </div>
+                <div class="post">
+                    <h2>HD vs SSD</h2>
+                    <span class="autor">Gabriel D. Valengo</span>
+                    <img src="./Imagens/discos-hdd-vs-discos-ssd-qual-dura-mais.jpg" width="800px">
+                    <p> Comparativo Entre os Tipos de Armazenamento Interno. </p>
+                    <a href="https://drive.google.com/file/d/1C3WlHeyNSzJtOUL3HdeRdCjNYZKaDKtH/view?usp=drive_link"> Ver Contéudo? </a>
+                </div>
+            </div>
+            <div class="barra-lateral">
+                <div class="post-games">
+                    <h3>Recomendações</h3>
+                </div>
+                <div class="post-games">
+                    <h4> Games </h4>
+                    <div class="post-games-indicações">
+                        <p> Honkai Star Rail </p>
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LEqxrMg1MjMxYPQSyMjPy07MVCguSSxSKErMzAEApesKdg&q=honkai+star+rail&oq=honka&gs_lcrp=EgZjaHJvbWUqDAgBEC4YJxiABBiKBTIGCAAQRRg5MgwIARAuGCcYgAQYigUyCggCEC4YsQMYgAQyCggDEAAYsQMYgAQyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEAUYQNIBCDIwNjFqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-games-indicações">
+                        <p> Genshin Impact </p>
+                        <a href="https://www.google.com/search?q=genshin+impact&sca_esv=4773a9d9c9d3b242&sca_upv=1&sxsrf=ACQVn09L-szQgtF6r-KvcJANadAmKBtF9A%3A1713028273392&ei=sbwaZpHJF4vs5OUP3oODkAE&udm=&gs_ssp=eJzj4tVP1zc0zKjKS842S88yYPTiS0_NK87IzFPIzC1ITC4BAJ5lCnc&oq=gen&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2dlbioCCAEyChAjGIAEGIoFGCcyChAuGIAEGIoFGCcyEBAAGIAEGIoFGEMYsQMYgwEyChAAGIAEGIoFGEMyEBAAGIAEGIoFGEMYsQMYgwEyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGENI6zFQxwVY2hVwAngBkAEEmAHSAaABgQ-qAQYwLjEzLjG4AQHIAQD4AQGYAgagAsIFqAIUwgIHECMYsAMYJ8ICChAAGEcY1gQYsAPCAg0QLhhDGIAEGIoFGLADwgINEAAYgAQYigUYQxiwA8ICDhAAGOQCGNYEGLAD2AEBwgITEC4YgAQYigUYQxjIAxiwA9gBAsICBBAjGCfCAg0QABiABBiKBRhDGLEDwgIFEAAYgATCAgcQIxjqAhgnwgIHEC4Y6gIYJ8ICExAAGIAEGIoFGEMY6gIYtALYAQPCAhMQLhhDGIAEGIoFGOoCGLQC2AEDwgITEC4YgAQYigUYQxjqAhi0AtgBA8ICChAuGIAEGIoFGEPCAgsQABiABBixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIOEC4YgAQYsQMYgwEY1AKYAy-IBgGQBhG6BgYIARABGAm6BgYIAhABGAi6BgYIAxABGAGSBwMyLjSgB52wAQ&sclient=gws-wiz-serp"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-games-indicações">
+                        <p> Fortnite </p>
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfItkxKtjQwYPTiSMsvKsnLLEkFAEfPBtA&q=fortnite&oq=for&gs_lcrp=EgZjaHJvbWUqDQgDEC4Y1AIYsQMYgAQyBggAEEUYOTIMCAEQIxgnGIAEGIoFMg0IAhAuGNQCGLEDGIAEMg0IAxAuGNQCGLEDGIAEMg0IBBAAGIMBGLEDGIAEMg0IBRAAGIMBGLEDGIAEMgYIBhBFGD0yBggHEEUYPNIBCDE3MzFqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-games-indicações">
+                        <p> Overwatch </p>
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zLCwSC8xNjEyYPTizi9LLSpPLEnOUDACAHEgCDY&q=overwatch+2&oq=over&gs_lcrp=EgZjaHJvbWUqDQgGEC4YgwEYsQMYgAQyBggAEEUYOTIKCAEQLhixAxiABDIMCAIQIxgnGIAEGIoFMg4IAxAjGBMYJxiABBiKBTIKCAQQABixAxiABDINCAUQABiDARixAxiABDINCAYQLhiDARixAxiABDIQCAcQLhjHARixAxjRAxiABDINCAgQABiDARixAxiABDINCAkQLhiDARixAxiABNIBCDI2NDdqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-games-indicações">
+                        <p> The Witcher 3: Wild Hunt </p>
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcoLE42MYs3YPTiLclIVSjPLEnOSC1SMAYAcV4IUg&q=the+witcher+3&oq=the+w&gs_lcrp=EgZjaHJvbWUqDQgDEC4Y1AIYsQMYgAQyBggAEEUYOTINCAEQLhjUAhixAxiABDINCAIQLhjUAhixAxiABDINCAMQLhjUAhixAxiABDINCAQQLhiDARixAxiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDQ0MDVqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-games-indicações">
+                        <p> God of War </p>
+                        <a href="https://www.google.com/search?q=god+of+war&sca_esv=4773a9d9c9d3b242&sca_upv=1&sxsrf=ACQVn08rUCMrBvARytiMGuZZiq03bFskTQ%3A1713028358556&ei=Br0aZtjSIcPF5OUPmq2gwAk&udm=&gs_ssp=eJzj4tLP1TcwzTAsy403YPTiSs9PUchPUyhPLAIAVfsHPg&oq=god+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGdvZCAqAggAMg0QLhhDGLEDGIAEGIoFMg0QLhhDGLEDGIAEGIoFMg0QLhhDGLEDGIAEGIoFMg0QLhhDGLEDGIAEGIoFMgoQABiABBiKBRhDMg0QLhiABBiKBRhDGLEDMg0QLhhDGLEDGIAEGIoFMg0QLhiABBiKBRhDGLEDMggQLhiABBixAzINEC4YgAQYigUYQxixAzIcEC4YQxixAxiABBiKBRiXBRjcBBjeBBjgBNgBA0jvG1D2A1jCE3ACeAGQAQOYAbwBoAGoDaoBBDAuMTK4AQHIAQD4AQGYAgegArkIqAIQwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICExAuGIAEGIoFGEMYyAMYsAPYAQLCAhYQLhhDGNQCGIAEGIoFGMgDGLAD2AECwgIQEC4YQxjUAhixAxiABBiKBcICEBAuGIAEGIoFGEMYsQMY1ALCAggQLhixAxiABMICBRAAGIAEwgINEAAYgAQYigUYQxixA8ICHxAuGEMY1AIYsQMYgAQYigUYlwUY3AQY3gQY4ATYAQPCAgcQIxjqAhgnwgIHEC4Y6gIYJ8ICFhAuGIAEGIoFGEMYyAMY6gIYtALYAQLCAhYQLhhDGIAEGIoFGMgDGOoCGLQC2AECwgIZEC4YQxjUAhiABBiKBRjIAxjqAhi0AtgBAsICChAuGIAEGIoFGCfCAgoQIxiABBiKBRgnwgIKEC4YgAQYigUYQ8ICDRAuGIAEGIoFGEMY1ALCAgsQABiABBixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIXEC4YgAQYigUYlwUY3AQY3gQY4ATYAQPCAhAQLhhDGMcBGNEDGIAEGIoFwgIcEC4YgAQYigUYQxixAxiXBRjcBBjeBBjgBNgBA5gDK4gGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFJIHBTIuMi4zoAfc_wE&sclient=gws-wiz-serp"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-games-indicações">
+                        <p> Dragon Age Inquisition </p>
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIMDU1M8gwYPQSSylKTM_PU0hMT1XIzCsszSzOLMnMzwMAw30L5Q&q=dragon+age+inquisition&oq=dragon+a&gs_lcrp=EgZjaHJvbWUqCggDEC4YsQMYgAQyDQgAEAAY4wIYsQMYgAQyDQgBEC4Y1AIYsQMYgAQyDQgCEC4Y1AIYsQMYgAQyCggDEC4YsQMYgAQyCggEEC4YsQMYgAQyDQgFEAAYgwEYsQMYgAQyDQgGEC4YgwEYsQMYgAQyCggHEC4YsQMYgAQyDQgIEAAYgwEYsQMYgAQyBwgJEAAYgATSAQg1NzQ0ajBqOagCALACAA&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-games-indicações">
+                        <p> The Last of Us </p>
+                        <a href="https://www.google.com/search?q=the+last+of+us&oq=the+las&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyDQgBEC4Y1AIYsQMYgAQyDQgCEC4Y1AIYsQMYgAQyDQgDEC4Y1AIYsQMYgAQyCggEEC4YsQMYgAQyCggFEC4YsQMYgAQyBggGEEUYOTITCAcQLhiDARjUAhixAxiABBiKBTITCAgQLhiDARjUAhixAxiABBiKBTITCAkQLhiDARjUAhixAxiABBiKBagCALACAA&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-games-indicações">
+                        <p> Uncharted 4: A Thief's End </p>
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tbP1TcwNKgws8yuNGD04i7NS85ILCpJTVEwAQBksgfV&q=uncharted+4&oq=unc&gs_lcrp=EgZjaHJvbWUqCggEEC4YsQMYgAQyBggAEEUYOTIKCAEQLhixAxiABDINCAIQLhjUAhixAxiABDINCAMQLhjUAhixAxiABDIKCAQQLhixAxiABDIHCAUQLhiABDIKCAYQLhixAxiABDIGCAcQRRg80gEIMjM5OGowajmoAgCwAgE&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                </div>
+                <div class="post-assistir">
+                    <h4> Para Assistir </h4>
+                    <div class="post-assistir-indicações">
+                        <p> Cowboy Beebop </p>
+                        <a href="https://www.google.com/search?q=cowboy+bebop+&sca_esv=4773a9d9c9d3b242&sca_upv=1&sxsrf=ACQVn0-MlbaNn3Y9xH-IgklwNe3wkqTSxw%3A1713028146744&ei=MrwaZumJLYjd5OUP4JCv4Ag&udm=&ved=0ahUKEwjp6rSR17-FAxWILrkGHWDIC4wQ4dUDCBA&uact=5&oq=cowboy+bebop+&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWNvd2JveSBiZWJvcCAyChAjGIAEGIoFGCcyChAjGIAEGIoFGCcyBBAjGCcyDRAAGIAEGIoFGEMYsQMyBRAuGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQLhiABDIFEAAYgARI5gVQiQRYiQRwAXgBkAEAmAGcAaABnAGqAQMwLjG4AQPIAQD4AQGYAgGgAswBmAMAiAYBkgcDMi0xoAf1DQ&sclient=gws-wiz-serp"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-assistir-indicações">
+                        <p> Supernatural </p>
+                        <a href="https://www.google.com/search?q=supernatural&oq=superna&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQLhiABDIGCAYQRRg8MgYIBxBFGDyoAgCwAgE&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-assistir-indicações">
+                        <p> Breaking Bad </p>
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcwTjE2qbAwYPTiSSpKTczOzEtXSEpMAQBhJQfP&q=breaking+bad&oq=brea&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBggAEEUYOTIKCAEQLhixAxiABDIKCAIQABixAxiABDIKCAMQLhixAxiABDIKCAQQABixAxiABDIKCAUQABixAxiABDIGCAYQRRg9MgYIBxBFGD3SAQgyNTQ3ajBqOagCALACAA&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-assistir-indicações">
+                        <p> AEW </p>
+                        <a href="https://www.youtube.com/@AEW"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-assistir-indicações">
+                        <p> WWE </p>
+                        <a href="https://www.youtube.com/@WWE"> Ver Sobre ? </a>
+                    </div>
+                </div>
+                <div class="post-esportes">
+                    <h4> Esportes </h4>
+                    <div class="post-esportes-indicações">
+                        <p> Flamengo </p>
+                        <a href="https://www.google.com/search?q=flamengo&oq=flam&gs_lcrp=EgZjaHJvbWUqEQgAEEUYJxg7GOMCGIAEGIoFMhEIABBFGCcYOxjjAhiABBiKBTIMCAEQLhgnGIAEGIoFMgYIAhBFGEAyBggDEEUYOTIKCAQQABixAxiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDE2MDVqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-esportes-indicações">
+                        <p> NFL </p>
+                        <a href="https://www.google.com/search?q=nfl&sca_esv=4773a9d9c9d3b242&sca_upv=1&sxsrf=ACQVn09eR6xB-HTqm9IWK3WLVC8e6quB_w%3A1713028031877&ei=v7saZu3VL6HP5OUP2-utkAg&udm=&ved=0ahUKEwitscza1r-FAxWhJ7kGHdt1C4IQ4dUDCBA&uact=5&oq=nfl&gs_lp=Egxnd3Mtd2l6LXNlcnAiA25mbDIKEC4YgAQYigUYJzIKECMYgAQYigUYJzIFEAAYgAQyChAAGIAEGIoFGEMyCxAAGIAEGLEDGIMBMgUQABiABDIQEAAYgAQYigUYQxixAxiDATIFEAAYgAQyCBAAGIAEGLEDMgUQABiABDIXEC4YgAQYigUYlwUY3AQY3gQY4ATYAQJI-xhQuwRYxRRwAngAkAEAmAGVAaABuwSqAQMwLjS4AQPIAQD4AQGYAgagArAHqAISwgINECMYgAQYigUYsAMYJ8ICEBAAGIAEGIoFGEMYsQMYsAPCAg0QABiABBiKBRhDGLADwgITEAAYgAQYigUYQxixAxiDARiwA8ICDhAAGIAEGLEDGIMBGLADwgILEAAYgAQYsQMYsAPCAhMQLhiABBiKBRhDGMgDGLAD2AEBwgIUEC4YgwEYsQMYgAQYyAMYsAPYAQHCAhAQLhiABBiKBRhDGLEDGIMBwgIKEC4YgAQYigUYQ8ICBxAjGOoCGCfCAgcQLhjqAhgnwgIWEC4YgAQYigUYQxjIAxjqAhi0AtgBAcICCxAuGIAEGLEDGIMBwgIIEC4YgAQYsQPCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIFEC4YgASYA0iIBgGQBhS6BgYIARABGAi6BgYIAhABGBSSBwUyLjIuMqAHoDw&sclient=gws-wiz-serp"> Ver Sobre ? </a>
+                    </div>
+                    <div class="post-esportes-indicações">
+                        <p> F1 </p>
+                        <a href="https://www.google.com/search?q=f1&oq=f1&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYPDIGCAMQRRg8MgYIBBBFGDzSAQc4NzlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"> Ver Sobre ? </a>
+                    </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p> Conteúdos Desmistificantes 2024 - Todos os Direitos Reseservados ao Excelentíssimo Senhor Gabriel D. Valengo e aqueles que buscarem conhecimento.</p>
+        </div>
+    </body>
+</html>
